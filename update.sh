@@ -1027,7 +1027,7 @@ remove_tweaked_packages() {
 }
 
 update_argon() {
-    local repo_url="https://github.com/jerrykuku/luci-theme-argon.git"
+    local repo_url="https://github.com/ZqinKing/luci-theme-argon.git"
     local dst_theme_path="$BUILD_DIR/feeds/luci/themes/luci-theme-argon"
     local tmp_dir
     tmp_dir=$(mktemp -d)
@@ -1113,7 +1113,7 @@ main() {
     update_nss_pbuf_performance
     set_build_signature
     update_nss_diag
-    update_menu_location
+    #update_menu_location
     fix_compile_coremark
     update_dnsmasq_conf
     add_backup_info_to_sysupgrade
