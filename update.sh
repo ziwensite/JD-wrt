@@ -919,8 +919,8 @@ update_diskman() {
         \rm -rf diskman
         cd "$BUILD_DIR"
 
-        sed -i 's/fs-ntfs /fs-ntfs3 /g' "$path/Makefile"
-        sed -i '/ntfs-3g-utils /d' "$path/Makefile"
+        #sed -i 's/fs-ntfs /fs-ntfs3 /g' "$path/Makefile"
+        #sed -i '/ntfs-3g-utils /d' "$path/Makefile"
     fi
 }
 
