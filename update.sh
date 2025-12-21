@@ -919,8 +919,8 @@ update_diskman() {
         \rm -rf diskman
         cd "$BUILD_DIR"
 
-        sed -i 's/fs-ntfs3 /fs-ntfs /g' "$path/Makefile"
-        #sed -i '/ntfs-3g-utils /d' "$path/Makefile"
+        sed -i 's/fs-ntfs /fs-ntfs3 /g' "$path/Makefile"
+        sed -i '/ntfs-3g-utils /d' "$path/Makefile"
     fi
 }
 
@@ -1126,7 +1126,7 @@ main() {
     update_lucky
     fix_rust_compile_error
     #update_smartdns
-    update_diskman
+    #update_diskman
     set_nginx_default_config
     update_uwsgi_limit_as
     #update_argon
