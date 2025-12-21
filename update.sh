@@ -1129,7 +1129,7 @@ main() {
     update_diskman
     set_nginx_default_config
     update_uwsgi_limit_as
-    update_argon
+    #update_argon
     update_nginx_ubus_module # 更新 nginx-mod-ubus 模块
     check_default_settings
     install_opkg_distfeeds
